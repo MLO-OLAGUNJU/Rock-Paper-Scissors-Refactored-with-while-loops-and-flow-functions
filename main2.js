@@ -1,10 +1,11 @@
 // Rock, Paper, Scissors: Refactored with while Loop and an Array
 let playGame = confirm("Shall we play rock, paper, or scissors");
 if (playGame) {
+  //play
   while (playGame) {
     const playerChoice = prompt("Please enter rock, paper, scissors");
     if (playerChoice || playerChoice === "") {
-      const playerChoice = playerChoice.trim().toLowerCase();
+      const playerOne = playerChoice.trim().toLowerCase();
       if (
         playerOne === "rock" ||
         playerOne === "paper" ||
@@ -30,7 +31,7 @@ if (playGame) {
           alert("Okay maybe some other time.\nThanks for playing!");
         continue;
       } else {
-        alert("You didn't enter rock, paper or scissors.");
+        alert("You didn't enter rock, paper osr scissors.");
       }
     }
   }
