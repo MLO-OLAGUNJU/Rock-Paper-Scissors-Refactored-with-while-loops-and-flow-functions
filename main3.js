@@ -85,3 +85,15 @@ const determineWinner = (player, computer) => {
       : `playerOne: ${player}\nCompuer: ${computer}\nplayerOne wins!`;
   return winner;
 };
+
+const displayResult = (result) => {
+  alert(result);
+};
+
+const askToPlayAgain = () => {
+  return confirm("Play Again?");
+};
+
+const thanksForPlaying = () => {
+  alert("Okay, thanks for playing.");
+};
