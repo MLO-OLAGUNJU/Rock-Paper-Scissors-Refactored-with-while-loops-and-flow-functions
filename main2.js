@@ -23,16 +23,21 @@ if (playGame) {
             : playerOne === "paper" && computer === "scissors"
             ? `playerOne: ${playerOne}\nComputer: ${computer}\nComputer wins!`
             : playerOne === "scissors" && computer === "rock"
-            ? `playerOne: ${playerOne}\nComputer: ${computer} Computer wins!`
+            ? `playerOne: ${playerOne}\nComputer: ${computer}\nComputer wins!`
             : `playerOne: ${playerOne}\nComputer: ${computer}\nplayerOne wins!`;
         alert(result);
         playGame = confirm("Play again?");
-        if (!playGame)
-          alert("Okay maybe some other time.\nThanks for playing!");
+        if (!playGame) alert("Thanks for playing!");
         continue;
       } else {
-        alert("You didn't enter rock, paper osr scissors.");
+        alert("You didn't enter rock, paper or scissors.");
+        continue;
       }
+    } else {
+      alert("I guess you changed your mind. Maybe next time.");
+      break;
     }
   }
+} else {
+  alert("Okay, maybe next time.");
 }
