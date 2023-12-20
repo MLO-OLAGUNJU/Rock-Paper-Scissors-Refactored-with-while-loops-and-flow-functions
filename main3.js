@@ -65,3 +65,19 @@ const evaluatePlayerChoice = (playerChoice) => {
 const invalidChoice = () => {
   alert("You didn't enter rock, paper, or scissors.");
 };
+
+const getComputerChoice = () => {
+  const randomNumber = Math.floor(Math.random() * 3);
+  const rpsArray = ["rock", "paper", "scissors"];
+  return rpsArray[randomNumber];
+};
+
+const determineWinner = (player, computer) => {
+    const winner =
+    player === computer
+    ? "Tie game!"
+    : player === "rock" && computer === "paper"
+    ? `playerOne: ${player}\nComputer: ${computer}\nComputer wins!`
+    : playerone === "paper" && computer === "scissors"
+    ? `playerOne: ${player}\nComputer: ${computer}\nplayerOne wins!`
+}
