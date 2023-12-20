@@ -38,3 +38,30 @@ const playGame = () => {
 const getPlayerChoice = () => {
   return prompt("Please enter rock, paper, or scissors");
 };
+
+const formatPlayerChoice = (playerChoice) => {
+  if (playerChoice || playerChoice === "") {
+    return playerChoice.trim().toLowerCase();
+  } else {
+    return false;
+  }
+};
+const decidedNotToPlay = () => {
+  alert("I guess you changed your mind. Maybe next time.");
+};
+
+const evaluatePlayerChoice = (playerChoice) => {
+  if (
+    playerChoice === "rock" ||
+    playerChoice === "paper" ||
+    playerChoice === "scissors"
+  ) {
+    return playerChoice;
+  } else {
+    return false;
+  }
+};
+
+const invalidChoice = () => {
+  alert("You didn't enter rock, paper, or scissors.");
+};
