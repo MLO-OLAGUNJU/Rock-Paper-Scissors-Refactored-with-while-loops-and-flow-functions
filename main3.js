@@ -97,3 +97,5 @@ const askToPlayAgain = () => {
 const thanksForPlaying = () => {
   alert("Okay, thanks for playing.");
 };
+
+initGame();
